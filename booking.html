@@ -1,0 +1,234 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC HIGH TECH - Best Electrical Service Company in Kigali</title>
+    <link rel="stylesheet" href="achigh.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fab fa-whatsapp"></i> Whatsapp: (+250) 783 252 551</span>
+                <span><i class="fas fa-phone-alt"></i> Tel: (+250) 792 043 439</span>
+                <span><i class="fab fa-instagram"></i> AC_HIGH_TECH</span>
+                <span><i class="fas fa-map-marker-alt"></i> KG 33 Ave, Kigali</span>
+            </div>
+            <div class="top-links">
+                <a href="#">blog</a>
+                <a href="#">support</a>
+                <a href="#">idea box</a>
+                <a href="#">Internship</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-text">
+                   <div class="ac"><h2>A <span>💡</span>C</h2></div>
+                  <div class="high"><h2>HIGH</h2></div>
+                  <div class="tech"><h2>TECH</h2></div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <a href="gemni.html" class="active">Home</a>
+                <a href="#services">Service</a>
+                <a href="#projects">Projects</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About Us</a>
+            </nav>
+            <div class="vertical-line"></div>
+            <div class="header-actions">
+                <a href="#" class="btn-link" onclick="openAdminLogin(event)">Login</a>
+
+                <a href="#" class="btn btn-red" onclick="openEmergencyForm(event)">Emergency service</a>
+            </div>
+        </div>
+    </header>
+     <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAdminLogin()">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminEmail">Email</label>
+                    <input type="email" id="adminEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="adminPassword">Password</label>
+                    <input type="password" id="adminPassword" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-yellow btn-full">Login</button>
+                <div id="loginStatus" class="form-status"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="achigh.js"></script>
+</body>
+</html>
+
+ <!-- BOOKING FORM SECTION -->
+    <section class="section-padding bg-light" id="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>BOOK OUR SERVICE</h2>
+            </div>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <form id="bookingForm" class="booking-form">
+                    <h3>Customer Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookFirstName">First Name</label>
+                            <input type="text" id="bookFirstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookLastName">Last Name</label>
+                            <input type="text" id="bookLastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookEmail">Email</label>
+                            <input type="email" id="bookEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookPhone">Phone</label>
+                            <input type="tel" id="bookPhone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="bookAddress">Address</label>
+                            <input type="text" id="bookAddress" name="address" placeholder="Street address">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookCity">City</label>
+                            <input type="text" id="bookCity" name="city" placeholder="Kigali">
+                        </div>
+                        <div class="form-group">
+                            <label for="bookState">District</label>
+                            <input type="text" id="bookState" name="state" placeholder="Gasabo">
+                        </div>
+                        <div class="form-group">
+                            <label for="bookZip">Postal Code</label>
+                            <input type="text" id="bookZip" name="zipCode">
+                        </div>
+                    </div>
+
+                    <h3>Service Details</h3>
+                    <div class="form-group full-width">
+                        <label for="bookServiceType">Service Type</label>
+                        <select id="bookServiceType" name="serviceType" required>
+                            <option value="">Select a service...</option>
+                            <option value="Electrical Installation">Electrical Installation</option>
+                            <option value="Electrical Maintenance">Electrical Maintenance</option>
+                            <option value="CCTV Installation">CCTV Installation</option>
+                            <option value="Networking Services">Networking Services</option>
+                            <option value="Electronic Repair">Electronic Repair</option>
+                            <option value="Emergency Service">Emergency Service</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="bookDescription">Service Description</label>
+                        <textarea id="bookDescription" name="description" rows="4" placeholder="Describe what you need..."></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookDate">Preferred Date</label>
+                            <input type="date" id="bookDate" name="preferredDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookTime">Preferred Time</label>
+                            <input type="time" id="bookTime" name="preferredTime" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-yellow btn-full">Confirm Booking <i class="fas fa-check-circle"></i></button>
+                    <div id="bookingStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-area">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-a">A</span><span class="logo-bulb"><i class="fas fa-lightbulb"></i></span><span class="logo-c">C</span>
+                    <div class="logo-text">
+                        <span class="text-high">HIGH</span>
+                        <span class="text-tech">TECH</span>
+                    </div>
+                </div>
+                <p>Best electrical service company in Kigali. Quality, safety and customer satisfaction is our priority.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>OUR SERVICES</h4>
+                <ul>
+                    <li><a href="#services">Electrical Installation</a></li>
+                    <li><a href="#services">Electrical Maintenance</a></li>
+                    <li><a href="#services">CCTV Installation</a></li>
+                    <li><a href="#services">Networking Services</a></li>
+                    <li><a href="#services">Electronic Repair</a></li>
+                    <li><a href="#services">Emergency Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>CONTACT INFO</h4>
+                <p><i class="fas fa-phone-alt"></i> (+250) 783 252 551</p>
+                <p><i class="fas fa-phone-alt"></i> (+250) 792 043 439</p>
+                <p><i class="fas fa-envelope"></i> achightech@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> KG 33 Ave, Kigali</p>
+            </div>
+            <div class="footer-form">
+                <h4>QUICK CONTACT</h4>
+                <form id="footerContactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="3" required></textarea>
+                    <button type="submit" class="btn btn-yellow btn-full">Send Message <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AC HIGH TECH. All Rights Reserved.</p>
+        </div>
+    </footer>
+

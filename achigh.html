@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC HIGH TECH - Best Electrical Service Company in Kigali</title>
+    <link rel="stylesheet" href="achigh.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fab fa-whatsapp"></i> Whatsapp: (+250) 783 252 551</span>
+                <span><i class="fas fa-phone-alt"></i> Tel: (+250) 792 043 439</span>
+                <span><i class="fab fa-instagram"></i> AC_HIGH_TECH</span>
+                <span><i class="fas fa-map-marker-alt"></i> KG 33 Ave, Kigali</span>
+            </div>
+            <div class="top-links">
+                <a href="#">blog</a>
+                <a href="#">support</a>
+                <a href="#">idea box</a>
+                <a href="#">Internship</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-text">
+                   <div class="ac"><h2>A <span>💡</span>C</h2></div>
+                  <div class="high"><h2>HIGH</h2></div>
+                  <div class="tech"><h2>TECH</h2></div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#services">Service</a>
+                <a href="#projects">Projects</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About Us</a>
+            </nav>
+            <div class="vertical-line"></div>
+            <div class="header-actions">
+                <a href="#" class="btn-link" onclick="openAdminLogin(event)">Login</a>
+                <a href="booking.html" class="btn btn-yellow" target="_blank">Book-now</a>
+                <a href="#" class="btn btn-red" onclick="openEmergencyForm(event)">Emergency service</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text-content">
+                <div class="welcome-tag">
+                   WELCOME TO A 💡 C HIGH TECH
+                </div>
+                <h1>BEST TECHNICAL SERVICE COMPANY <span class="highlight">IN KIGALI</span></h1>
+                <p>We provide professional electrical, electronic, networking and IT services with quality and safety you can trust.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-yellow" onclick="scrollToSection('booking')">Book Urgency <i class="fas fa-bolt"></i></button>
+                    <button class="depanage" onclick="scrollToSection('contact')">Book depanage <i class="fa-solid fa-screwdriver-wrench"></i></button>
+                    <button class="btn btn-outline" onclick="scrollToSection('services')">Our Services <i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <div class="feature-text"><strong>24/7 Support</strong>Available</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+                        <div class="feature-text"><strong>Qualified</strong>Technicians</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <div class="feature-text"><strong>Fast & Reliable</strong>Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll">
+         SCROLL   
+        </div>
+    </section>
+
+    <section class="section-padding" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>OUR SERVICES</h2>
+            </div>
+        
+            <div class="services-grid">
+                <div class="service-card">
+                    <a href="">
+                        <img src="electricalinstallation.jpeg">
+                        <h3>Electrical</h3>
+                        <p>Installation</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="">
+                        <img src="electricalservice.webp">
+                        <h3>Electrical</h3>
+                        <p>Maintenance</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="">
+                        <img src="cctvcamera.webp">
+                        <h3>CCTV</h3>
+                        <p>Installation</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="">
+                        <img src="network.jpg">
+                        <h3>Networking</h3>
+                        <p>Services</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="">
+                        <img src="electronic-repair.jpg">
+                        <h3>Electronic</h3>
+                        <p>Repair</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>OUR PROJECTS</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="collage.png">
+                    <h4>Interior lightings Installation</h4>
+                </div>
+                <div class="project-card">
+                    <img src="cctv camera.jpg">
+                    <h4>CCTV System Installation</h4>
+                </div>
+                <div class="project-card">
+                    <img src="networking.jpg">
+                    <h4>Network Setup (Office)</h4>
+                </div>
+                <div class="project-card">
+                    <img src="electricpanel.jpg">
+                    <h4>Electrical Panel Installation</h4>
+                </div>
+                <div class="project-card">
+                    <img src="solarpanel.jpg">
+                    <h4>Solar System Installation</h4>
+                </div>
+                <div class="project-card">
+                    <img src="stairslight.png">
+                    <h4>Lighting Design Project</h4>
+                </div>
+            </div>
+            <div class="center-btn">
+                <button class="btn btn-blue" onclick="scrollToSection('contact')">View All Projects <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container choose-us-wrapper">
+            <div class="choose-us-content">
+                <h2>WHY CHOOSE US?</h2>
+                <ul class="choose-list">
+                    <li><i class="fas fa-check-circle"></i> Experienced & Qualified Technicians.</li>
+                    <li><i class="fas fa-check-circle"></i> Quality Work & Safety Guarantee.</li>
+                    <li><i class="fas fa-check-circle"></i> Affordable & Transparent Pricing.</li>
+                    <li><i class="fas fa-check-circle"></i> Fast Response & 24/7 Availability.</li>
+                    <li><i class="fas fa-check-circle"></i> Customer Satisfaction First.</li>
+                </ul>
+                <img src="electricalservice.jpg" height="350px" width="500px" style="border-radius: 20px;">
+            </div>
+            <div class="stats-banner">
+                <div class="stat-item">
+                    <i class="fas fa-folder-open stat-icon"></i>
+                    <h3>500+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users stat-icon"></i>
+                    <h3>300+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-headset stat-icon"></i>
+                    <h3>24/7</h3>
+                    <p>Support Available</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award stat-icon"></i>
+                    <h3>4+</h3>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light" id="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=600" alt="About High Tech Maintenance">
+            </div>
+            <div class="about-text">
+                <h2>ABOUT AC HIGH TECH</h2>
+                <hr class="title-line">
+                <p>AC HIGH TECH is a professional electrical, electronic, networking and IT service provider based in Kigali. We are committed to delivering high quality, safe and reliable solutions for homes, offices and industries.</p>
+                <button class="btn btn-yellow">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container text-center">
+            <div class="section-title">
+                <h2>WHAT OUR CLIENTS SAY</h2>
+            </div>
+            <div class="testimonial-slider">
+                <button class="slider-arrow left-arrow" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-track" id="sliderTrack">
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Excellent electrical installation service. Very professional and on time."</p>
+                        <h5>— Jean Paul, Kigali</h5>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Their network setup service is the best. Strong and reliable connection."</p>
+                        <h5>— Maombi samuel, Office Manager</h5>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"24/7 support helped us a lot during an emergency. Highly recommended!"</p>
+                        <h5>— Mugisha Daniel, C.E.O </h5>
+                    </div>
+                </div>
+                <button class="slider-arrow right-arrow" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="emergency-cta-banner">
+        <div class="container cta-flex">
+            <div class="cta-left">
+                <i class="fas fa-bolt lightning-icon"></i>
+                <div>
+                    <h2>NEED EMERGENCY ELECTRICAL SERVICE?</h2>
+                    <p>We are available 24/7 to help you anytime!</p>
+                </div>
+            </div>
+            <button class="btn btn-yellow call-now-btn" onclick="alert('Call: (+250) 783 252 551')">
+                <i class="fas fa-phone-alt"></i> Call Now: (+250) 783 252 551
+            </button>
+            <div class="cta-right-siren">
+                <i class="fas fa-lightbulb siren-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>SEND US A MESSAGE</h2>
+            </div>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="contactFirstName">First Name</label>
+                        <input type="text" id="contactFirstName" name="firstName" placeholder="Your First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactLastName">Last Name</label>
+                        <input type="text" id="contactLastName" name="lastName" placeholder="Your Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="phone" placeholder="(250) 123 456 789" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" name="subject" placeholder="What is this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-yellow btn-full">Send Message <i class="fas fa-arrow-right"></i></button>
+                    <div id="contactStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   
+                    </div>
+
+                        
+
+    <footer class="footer-area">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-a">A</span><span class="logo-bulb"><i class="fas fa-lightbulb"></i></span><span class="logo-c">C</span>
+                    <div class="logo-text">
+                        <span class="text-high">HIGH</span>
+                        <span class="text-tech">TECH</span>
+                    </div>
+                </div>
+                <p>Best electrical service company in Kigali. Quality, safety and customer satisfaction is our priority.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>OUR SERVICES</h4>
+                <ul>
+                    <li><a href="#services">Electrical Installation</a></li>
+                    <li><a href="#services">Electrical Maintenance</a></li>
+                    <li><a href="#services">CCTV Installation</a></li>
+                    <li><a href="#services">Networking Services</a></li>
+                    <li><a href="#services">Electronic Repair</a></li>
+                    <li><a href="#services">Emergency Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>CONTACT INFO</h4>
+                <p><i class="fas fa-phone-alt"></i> (+250) 783 252 551</p>
+                <p><i class="fas fa-phone-alt"></i> (+250) 792 043 439</p>
+                <p><i class="fas fa-envelope"></i> achightech@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> KG 33 Ave, Kigali</p>
+            </div>
+            <div class="footer-form">
+                <h4>QUICK CONTACT</h4>
+                <form id="footerContactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="3" required></textarea>
+                    <button type="submit" class="btn btn-yellow btn-full">Send Message <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AC HIGH TECH. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAdminLogin()">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminEmail">Email</label>
+                    <input type="email" id="adminEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="adminPassword">Password</label>
+                    <input type="password" id="adminPassword" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-yellow btn-full">Login</button>
+                <div id="loginStatus" class="form-status"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="achigh.js"></script>
+</body>
+</html>
